@@ -8,6 +8,14 @@ const app = express();
 
 app.use(morgan('common'));
 
+app.get('/apps', (req, res) => {
+  const {sort, genres} = req.query;
+
+  res
+    .json(games);
+
+});
+
 
 
 
